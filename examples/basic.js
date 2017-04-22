@@ -1,4 +1,4 @@
-const rt = require('../index');
+const rt = require('../dist/index');
 const Realtime = rt.Realtime;
 const realtime = rt.realtime;
 //var realtime = new Realtime();
