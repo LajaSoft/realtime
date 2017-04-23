@@ -8,7 +8,7 @@ var srcFiles = find.fileSync(/\.js$/, srcDir).map(function(file) {
     return file.replace(srcDir + '/', '');
 });
 
-Promise.all("0,0.10,0.12,4,6, 7".split(',').map(function(version) {
+Promise.all("0,0.10,0.12,4,6, 7.6".split(',').map(function(version) {
   version = parseFloat(version) || 'browser';
   var dstDir = path.resolve(path.join(__dirname,'..', 'dist', String(version)));
   return Promise.all(srcFiles.map(function(srcFile) {

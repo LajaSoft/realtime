@@ -12,5 +12,7 @@ var version = fs.readdirSync(distDir,  'utf-8').filter(function(file) {
 } , 0);
 
 fs.readFile(path.join(distDir, version, 'index.js'), function(err, content) {
-  fs.writeFile(path.join(distDir, 'index.js'), content);
+  fs.writeFile(path.join(distDir, 'index.js'), content, function() {
+		console.log("done install realtimeout for node version", version);
+	});
 });

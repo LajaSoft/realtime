@@ -8,7 +8,7 @@ function bindStandartFunctions(that) {
 }
 const defaultConfig = {};
 const _deleted = Symbol('deleted');
-class Realtime {
+class Realtimeout {
 	constructor(config) {
 		this._timeoutCounter = 0;
 		this._intervalCounter = 0;
@@ -79,7 +79,7 @@ class Realtime {
 		return await _nextTick(this);
 	}
 }
-module.exports = {Realtime, realtime: new Realtime()};
+module.exports = {Realtimeout, realtimeout: new Realtimeout()};
 
 
 
@@ -116,4 +116,3 @@ async function runWorkers(workers, config, that) {
 		}
 	}
 }
-
