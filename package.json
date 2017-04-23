@@ -1,13 +1,13 @@
 {
   "name": "realtimeout",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Realtime setTimeout setInterval",
   "main": "dist/index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node dist/test.js",
     "postinstall": "node build/install.js",
     "build": "node build/build.js"
   },

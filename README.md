@@ -16,8 +16,11 @@ make synchronised setTimeout/setInterval on virtual timeline
     const Realtimeout = rt.Realtimeout; // class to create private timeline
 ---
 Application wide  instance:
+
     const realtimeout = rt.realtimeout;
+
 Local instance:
+
     const realtimeout = var realtimeout = new Realtimeout({options});
 
 use them as standard js function:
